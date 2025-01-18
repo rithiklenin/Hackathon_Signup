@@ -10,7 +10,10 @@
 }
 
 .logo {
-  height: 6em;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
@@ -43,4 +46,10 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.vertical-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
