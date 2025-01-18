@@ -40,3 +40,64 @@
 .read-the-docs {
   color: #888;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  padding: 0;
+}
+
+.header {
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.shapes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.shape {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.orange {
+  background-color: #FFA500; /* Orange */
+  top: 0;
+  left: 0;
+}
+
+.pink {
+  background-color: #FF69B4; /* Pink */
+  top: 0;
+  right: 0;
+}
+
+.green {
+  background-color: #32CD32; /* Green */
+  bottom: 0;
+  left: 0;
+}
+
+.blue {
+  background-color: #1E90FF; /* Blue */
+  bottom: 0;
+  right: 0;
+}
