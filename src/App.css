@@ -33,6 +33,20 @@
   }
 }
 
+.fade-out {
+  animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
@@ -51,4 +65,93 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+/* Add animation to the logo image to make it spin */
+@keyframes spinLogo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Logo Section - Apply spin to the image directly */
+.logo img {
+  animation: spinLogo 1.5s linear infinite; /* 5s duration for continuous spin */
+  transition: transform 0.3s ease; /* Smooth transition for any interaction */
+}
+
+/* Styling for the carousel container */
+.carousel-container {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  animation: rotateCarousel 2s linear infinite; /* Ultra-fast rotation for carousel */
+}
+
+/* Animation for rotating the entire container */
+@keyframes rotateCarousel {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Each circle's styling */
+.carousel-circle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #ddd;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  transform-origin: 50% 50%;
+}
+
+/* Circle positions around the container */
+.carousel-circle:nth-child(1) {
+  transform: rotate(0deg) translateX(75px) rotate(0deg);
+}
+
+.carousel-circle:nth-child(2) {
+  transform: rotate(51.43deg) translateX(75px) rotate(-51.43deg);
+}
+
+.carousel-circle:nth-child(3) {
+  transform: rotate(102.86deg) translateX(75px) rotate(-102.86deg);
+}
+
+.carousel-circle:nth-child(4) {
+  transform: rotate(154.29deg) translateX(75px) rotate(-154.29deg);
+}
+
+.carousel-circle:nth-child(5) {
+  transform: rotate(205.71deg) translateX(75px) rotate(-205.71deg);
+}
+
+.carousel-circle:nth-child(6) {
+  transform: rotate(257.14deg) translateX(75px) rotate(-257.14deg);
+}
+
+.carousel-circle:nth-child(7) {
+  transform: rotate(308.57deg) translateX(75px) rotate(-308.57deg);
+}
+
+/* Styling for selected circle */
+.carousel-circle.selected {
+  background-color: #4c89f1;
+  color: white;
 }
