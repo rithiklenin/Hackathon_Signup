@@ -11,7 +11,7 @@ function App() {
   const [gender, setGender] = useState('');
   const [buttonStyle, setButtonStyle] = useState({});
   const [isMoving, setIsMoving] = useState(false);
-  const [isClicked, setIsClicked] = useState(false);
+  // const [isClicked, setIsClicked] = useState(false);
   const [confetti, setConfetti] = useState(false);
   const [bgColor, setBgColor] = useState('black');
   const [transitioning, setTransitioning] = useState(false); // Track transition state
@@ -20,7 +20,7 @@ function App() {
   const handleTransition = () => {
     setTransitioning(true); // Start the transition effect
     setTimeout(() => {
-      navigate('/school'); // Navigate after the transition
+      navigate('/birthday'); // Navigate after the transition
     }, 1000); // Delay to allow the transition effect
   };
 
@@ -32,33 +32,33 @@ function App() {
     if (countryCode > 1) setCountryCode(countryCode - 1);
   };
 
-  const moveButton = () => {
-    const randomX = Math.floor(Math.random() * 90);
-    const randomY = Math.floor(Math.random() * 90);
-    setButtonStyle({
-      position: 'absolute',
-      left: `${randomX}%`,
-      top: `${randomY}%`,
-      transform: 'translate(-50%, -50%)',
-    });
-  };
+  // const moveButton = () => {
+  //   const randomX = Math.floor(Math.random() * 90);
+  //   const randomY = Math.floor(Math.random() * 90);
+  //   setButtonStyle({
+  //     position: 'absolute',
+  //     left: `${randomX}%`,
+  //     top: `${randomY}%`,
+  //     transform: 'translate(-50%, -50%)',
+  //   });
+  // };
 
-  const handleClick = () => {
-    if (!isClicked) {
-      setIsClicked(true);
-      setIsMoving(true);
+  // const handleClick = () => {
+  //   if (!isClicked) {
+  //     setIsClicked(true);
+  //     setIsMoving(true);
 
-      const moveInterval = setInterval(() => {
-        moveButton();
-      }, 500);
+  //     const moveInterval = setInterval(() => {
+  //       moveButton();
+  //     }, 500);
 
-      setTimeout(() => {
-        clearInterval(moveInterval);
-        setIsMoving(false);
-        setButtonStyle({});
-      }, 5000);
-    }
-  };
+  //     setTimeout(() => {
+  //       clearInterval(moveInterval);
+  //       setIsMoving(false);
+  //       setButtonStyle({});
+  //     }, 5000);
+  //   }
+  // };
 
   const handleInputClick = () => {
     setConfetti(true);

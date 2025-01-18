@@ -4,13 +4,17 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
 import App from './App.jsx';
 import SchoolPage from './SchoolPage.jsx';
+import Birthday from './Birthday.jsx';
+import Skills from './Skills.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/school" element={<SchoolPage />} /> {/* Corrected path */}
+        <Route path="/school" element={<SchoolPage />} />
+        <Route path="/birthday" element={<Birthday />} />
+        <Route path="/skills" element={<Skills />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>
