@@ -61,7 +61,7 @@ function Skills() {
             value={skills}
             onChange={(e) => setSkills(e.target.value)}
             list="skills-list"
-            className="w-full px-4 py-2 border rounded-md text-gray-700 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+            className="w-full px-4 py-2 border rounded-md bg-slate-50text-gray-700 focus:ring-2 focus:ring-blue-400 focus:outline-none"
           />
           {/* Datalist with predefined options */}
           <datalist id="skills-list">
