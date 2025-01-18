@@ -18,11 +18,11 @@ function SchoolPage() {
   };
 
   const increaseSpinSpeed = () => {
-    setSpinSpeed((prev) => Math.min(prev + 0.5, 5)); // Cap speed at 5x
+    setSpinSpeed((prev) => Math.min(prev + 1, 10)); // Cap speed at 10x
   };
 
   const decreaseSpinSpeed = () => {
-    setSpinSpeed((prev) => Math.max(prev - 0.5, 0.5)); // Minimum speed is 0.5x
+    setSpinSpeed((prev) => Math.max(prev - 0.3, 1.5)); // Minimum speed is 1x
   };
 
   return (
