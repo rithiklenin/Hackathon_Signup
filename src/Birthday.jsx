@@ -87,7 +87,7 @@ function Birthday() {
       {showConfetti && <Confetti gravity={0.3} numberOfPieces={200} />}
       <div className="w-full max-w-md text-center mb-6">
         <img
-          src={'./src/assets/hero-logo.jpeg'}
+          src={'/hero-logo-roll.svg'}
           alt="Hero Logo"
           className="mx-auto w-32 h-32 object-contain mb-4"
         />

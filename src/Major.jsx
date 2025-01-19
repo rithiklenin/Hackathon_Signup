@@ -65,7 +65,7 @@ function Major() {
         }}
       >
         <img
-          src={'./src/assets/hero-logo.jpeg'}
+          src={'/hero-logo-roll.svg'}
           alt="Top Hero Logo 1"
           className="w-42 h-40 object-contain"
         />
@@ -81,7 +81,7 @@ function Major() {
         }}
       >
         <img
-          src={'./src/assets/hero-logo.jpeg'}
+          src={'/hero-logo-roll.svg'}
           alt="Top Hero Logo 2"
           className="w-42 h-40 object-contain"
         />
@@ -97,7 +97,7 @@ function Major() {
         }}
       >
         <img
-          src={'./src/assets/hero-logo.jpeg'}
+          src={'/hero-logo-roll.svg'}
           alt="Top Hero Logo 3"
           className="w-42 h-40 object-contain"
         />
@@ -144,7 +144,7 @@ function Major() {
         }}
       >
         <img
-          src={'./src/assets/hero-logo.jpeg'}
+          src={'/hero-logo-roll.svg'}
           alt="Bottom Hero Logo 1"
           className="w-42 h-40 object-contain"
         />
@@ -160,7 +160,7 @@ function Major() {
         }}
       >
         <img
-          src={'./src/assets/hero-logo.jpeg'}
+          src={'/hero-logo-roll.svg'}
           alt="Bottom Hero Logo 2"
           className="w-42 h-40 object-contain"
         />
@@ -176,7 +176,7 @@ function Major() {
         }}
       >
         <img
-          src={'./src/assets/hero-logo.jpeg'}
+          src={'/hero-logo-roll.svg'}
           alt="Bottom Hero Logo 3"
           className="w-42 h-40 object-contain"
         />

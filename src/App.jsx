@@ -93,7 +93,7 @@ function App() {
       {confetti && <ReactConfetti />}
       <div className="w-full max-w-md text-center mb-6 mt-8">
         <img
-          src={'./src/assets/hero-logo.jpeg'}
+          src={'/hero-logo-roll.svg'}
           alt="Hero Logo"
           className="mx-auto w-42 h-40 object-contain mb-4"
         />

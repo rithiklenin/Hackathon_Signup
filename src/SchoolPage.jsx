@@ -30,7 +30,7 @@ function SchoolPage() {
       {/* Logo Section */}
       <div className="w-full max-w-md text-center mt-8 mb-16 logo">
         <img
-          src={'./src/assets/hero-logo.jpeg'}
+          src={'/hero-logo-roll.svg'}
           alt="Hero Logo"
           className="mx-auto w-44 h-40 object-contain"
         />

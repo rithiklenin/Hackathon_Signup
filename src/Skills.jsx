@@ -56,7 +56,7 @@ function Skills() {
     <div className="flex flex-col items-center justify-center min-h-screen bg-white">
       <div className="w-full max-w-md text-center mb-6">
         <img
-          src={'./src/assets/hero-logo.jpeg'}
+          src={'/hero-logo-roll.svg'}
           alt="Hero Logo"
           className="mx-auto w-42 h-40 object-contain mb-4 transform rotate-180"
         />
