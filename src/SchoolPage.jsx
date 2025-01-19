@@ -67,7 +67,7 @@ function SchoolPage() {
       {/* Navigation Texts */}
       <div className="mt-8 text-center">
         <p
-          onClick={() => navigate('/skills')}
+          onClick={() => navigate('/major')}
           className="text-blue-500 cursor-pointer hover:underline"
         >
           Click here to proceed.

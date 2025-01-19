@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Skills.css';
 
 function Skills() {
@@ -8,6 +9,8 @@ function Skills() {
 
   // Define invalid skills
   const invalidSkills = ['Word', 'Powerpoint', 'Excel', 'HTML', 'Node.js'];
+
+  const navigate = useNavigate();
 
   const handleSubmit = () => {
     if (invalidSkills.includes(skills)) {
@@ -24,14 +27,22 @@ function Skills() {
       setClickCount(clickCount + 1);
     } else {
       // Fifth click: Submit the skill
-      window.open(
+      const newTab = window.open(
         'https://www.indeed.com/career-advice/career-development/career-advancement-skills',
-        '_blank'
+        '_blank',
+        'noopener,noreferrer'
       );
+      
+      if (newTab) {
+        window.focus(); // Refocus on the current window
+      }
+    
       alert(`Signed up with skills: ${skills}`);
       setSkills(''); // Clear the input
       setClickCount(0); // Reset click count
+      navigate('/interest'); // Navigate to /interest
     }
+    
   };
 
   // Dynamic styles for the "Are you sure?" message
