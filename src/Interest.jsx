@@ -40,7 +40,7 @@ function Interest() {
     if (interest.trim() === '') {
       alert('NO CHEATING!');
     } else {
-      navigate('/');
+      navigate('/experience');
     }
   };
 
