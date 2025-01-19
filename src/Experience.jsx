@@ -66,7 +66,7 @@ function Experience() {
 
   const handleConfirmClick = () => {
     alert(`You confirmed the value: ${number}`);
-    navigate('/confirm');
+    navigate('/slowprogress');
   };
 
   return (

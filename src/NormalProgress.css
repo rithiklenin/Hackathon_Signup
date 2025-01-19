@@ -1,0 +1,29 @@
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  width: 150vh;
+  background-color: #f0f0f0;
+}
+
+.loader {
+  width: 80%;
+  height: 30px;
+  background-color: #ddd; /* This is the grey background bar */
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%; /* Make sure progress bar takes up full height of the loader */
+  background-color: #4caf50; /* Green color for the filled progress bar */
+  transition: width 0.5s linear; /* Smooth width transition */
+}
+
+.loading-text {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
