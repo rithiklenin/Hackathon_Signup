@@ -1,9 +1,12 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Interest.css';
 
 function Interest() {
   const [interest, setInterest] = useState('');
   const [emojis, setEmojis] = useState([]); // State to store the crying emojis
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     // Wait 3 seconds before starting emoji generation
@@ -35,11 +38,9 @@ function Interest() {
 
   const handleSubmit = () => {
     if (interest.trim() === '') {
-      alert('Please enter an interest before submitting!');
+      alert('NO CHEATING!');
     } else {
-      setEmojis([]); // Clear all emojis
-      setInterest(''); // Reset the input field
-      alert(`Signed up: ${interest}`);
+      navigate('/');
     }
   };
 
