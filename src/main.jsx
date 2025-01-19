@@ -10,6 +10,7 @@ import Skills from './Skills.jsx';
 import Interest from './Interest.jsx';
 import Experience from './Experience.jsx';
 import Confirm from './Confirm.jsx';
+import SlowProgress from './SlowProgress.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -22,6 +23,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/skills" element={<Skills />} />
         <Route path="/interest" element={<Interest />} />
         <Route path="/experience" element={<Experience />} />
+        <Route path="/slowprogress" element={<SlowProgress />} />
         <Route path="/confirm" element={<Confirm />} />
       </Routes>
     </BrowserRouter>
